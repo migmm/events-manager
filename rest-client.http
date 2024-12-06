@@ -1,0 +1,118 @@
+@api_base_url = http://localhost:4004/odata/v4/events-tickets/
+
+
+
+### Buy event
+POST http://localhost:4004/odata/v4/events-tickets/BuyTicket 
+content-type: application/json
+
+{
+  "Event_ID": "EVT10",
+  "User_ID": "USR26"
+}
+
+
+# View Events
+# GET {{api_base_url}}Events
+
+# View ickets
+# GET {{api_base_url}}Tickets
+
+# View Users
+# GET {{api_base_url}}Users
+
+
+
+#######################################
+### Requests for the Events entity  ###
+#######################################
+
+### Read events
+GET {{api_base_url}}Events 
+
+###Get an event by ID
+GET /odata/v4/events-tickets/Events(ID='EVT10') HTTP/1.1
+
+### Create an event
+POST {{api_base_url}}Events
+Content-Type: application/json
+
+{
+    "Name": "Wine Tasting Expo",
+    "Location": "Wine Country Resort",
+    "Price": 85.50,
+    "AvailableSeats": 400
+}
+
+### Update an event
+# Note: patch is used for a partial modification
+PATCH {{api_base_url}}Events(ID='EVT10') 
+Content-Type: application/json
+
+{
+    "Price": 90.00
+}
+
+### Delete an event
+DELETE {{api_base_url}}Events(ID='be93e2cd-a804-4588-a2e8-27d7ff037815') 
+
+
+
+#######################################
+### Requests for the Tickets entity ###
+#######################################
+
+### Create a ticket
+POST {{api_base_url}}Tickets 
+Content-Type: application/json
+
+{
+    "Event_ID": "EVT10",
+    "User_ID": "USR26",
+    "PurchaseDate": "2023-10-05T12:00:00Z",
+    "Status": "Buyed"
+}
+
+### Read tickets
+GET {{api_base_url}}Tickets 
+
+### Update a ticket
+# Note: patch is used for a partial modification
+PATCH {{api_base_url}}Tickets(ID='TKT123') 
+Content-Type: application/json
+
+{
+    "Status": "Cancelled"
+}
+
+### Delete a ticket
+DELETE {{api_base_url}}Tickets(ID='TKT123') 
+
+
+
+#######################################
+###  Requests for the Users entity  ###
+#######################################
+
+### Create a user
+POST {{api_base_url}}Users 
+Content-Type: application/json
+
+{
+    "Name": "John Doe",
+    "Email": "john.doe@example.com"
+}
+
+### Read users
+GET {{api_base_url}}Users 
+
+### Update a user
+PATCH {{api_base_url}}Users(ID='USR26') 
+Content-Type: application/json
+
+{
+    "Email": "john.doe.new@example.com"
+}
+
+### Delete a user
+DELETE {{api_base_url}}Users(ID='USR26') 
