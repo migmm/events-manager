@@ -110,6 +110,8 @@ Users screen
 Dummy data is included in the db/data directory to facilitate testing. This data can populate the database for API testing.
 REST Client File
 
+## REST Client File
+
 A [HTTP request file](rest-client.http) to be used in [REST Client](https://marketplace.visualstudio.com/items?itemName=humao.rest-client) extension for VSCode. is included in the root directory. It contains pre-configured requests for all API endpoints.
 
 ## Source Information
