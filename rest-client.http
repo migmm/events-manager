@@ -1,5 +1,5 @@
+### Base URL
 @api_base_url = http://localhost:4004/odata/v4/events-tickets/
-
 
 
 ### Buy event
@@ -10,16 +10,6 @@ content-type: application/json
   "Event_ID": "EVT10",
   "User_ID": "USR26"
 }
-
-
-# View Events
-# GET {{api_base_url}}Events
-
-# View ickets
-# GET {{api_base_url}}Tickets
-
-# View Users
-# GET {{api_base_url}}Users
 
 
 
