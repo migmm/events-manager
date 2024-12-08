@@ -77,7 +77,7 @@ The CDS model includes three main entities: Events, Tickets, and Users. Their re
     Tickets: Composition of many Tickets on Tickets.Event_ID = $self;
 ```
 
-- Tickets to Users: The Tickets entity is associated with the Users entity via the User_ID field. This is defined implicitly as a parent-child relationship, where the parent has one record, and the child can have many.
+- Tickets to Users: The Tickets entity is associated with the Users entity via the User_ID field. The relation is one to one.
 
 
 ### Annotations
