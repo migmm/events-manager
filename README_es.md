@@ -77,7 +77,7 @@ El modelo CDS incluye tres entidades principales: Events, Tickets, y Users. Sus 
 ```javascript
 Tickets: Composition of many Tickets on Tickets.Event_ID = $self;
 ```
-- Tickets a Users: La entidad Tickets está asociada con la entidad Users a través del campo User_ID. Esto se define implícitamente como una relación padre-hijo, donde el padre tiene un registro y el hijo puede tener muchos.
+- Tickets a Users: La entidad Tickets está asociada con la entidad Users a través del campo User_ID. La relacion es uno a uno.
 
 ## Anotaciones en CDS
 
