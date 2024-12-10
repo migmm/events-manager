@@ -2,10 +2,9 @@ const cds = require('@sap/cds');
 
 module.exports = cds.service.impl(async function () {
 
-    // Importar entidades desde sus archivos
     const { Events, Tickets, Reviews, Payments, Discounts } = this.entities;
 
-    // Crear un evento
+    // Create an event
     this.on('CreateEvent', async req => {
         const { Name, Date, Location, AvailableSeats, Price, Category } = req.data;
         return await INSERT.into(Events).entries({
@@ -13,7 +12,7 @@ module.exports = cds.service.impl(async function () {
         });
     });
 
-    // Comprar un ticket
+    // Buy a ticket
     this.on('PurchaseTicket', async req => {
         const { Event_ID, User_ID, Discount_ID, Type_ID, Seat } = req.data;
         return await INSERT.into(Tickets).entries({
@@ -21,7 +20,7 @@ module.exports = cds.service.impl(async function () {
         });
     });
 
-    // Agregar una reseña
+    // Add review
     this.on('AddReview', async req => {
         const { Event_ID, User_ID, Rating, Comment } = req.data;
         return await INSERT.into(Reviews).entries({
@@ -29,14 +28,14 @@ module.exports = cds.service.impl(async function () {
         });
     });
 
-    // Aplicar un descuento a un ticket
+    // Apply discount
     this.on('ApplyDiscount', async req => {
         const { Ticket_ID, Discount_ID } = req.data;
         await UPDATE(Tickets, Ticket_ID).with({ Discount_ID });
         return await SELECT.from(Tickets).where({ ID: Ticket_ID });
     });
 
-    // Realizar un pago
+    // Pay
     this.on('MakePayment', async req => {
         const { Ticket_ID, PaymentMethod_ID, Amount } = req.data;
         return await INSERT.into(Payments).entries({
