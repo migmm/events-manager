@@ -1,0 +1,21 @@
+ID,TypeName,Description,Price
+550e8400-e29b-41d4-a716-446655440700,General Admission,Standard ticket for entry,50.00
+550e8400-e29b-41d4-a716-446655440701,VIP,Premium ticket with extra benefits,100.00
+550e8400-e29b-41d4-a716-446655440702,Student,Discounted ticket for students,25.00
+550e8400-e29b-41d4-a716-446655440703,Group,Discounted ticket for groups,40.00
+550e8400-e29b-41d4-a716-446655440704,Early Bird,Discounted ticket for early bookings,30.00
+550e8400-e29b-41d4-a716-446655440705,Family,Discounted ticket for families,75.00
+550e8400-e29b-41d4-a716-446655440706,Senior,Discounted ticket for seniors,20.00
+550e8400-e29b-41d4-a716-446655440707,Child,Discounted ticket for children,10.00
+550e8400-e29b-41d4-a716-446655440708,Corporate,Ticket for corporate events,150.00
+550e8400-e29b-41d4-a716-446655440709,Press,Ticket for press members,0.00
+550e8400-e29b-41d4-a716-446655440710,Staff,Ticket for event staff,0.00
+550e8400-e29b-41d4-a716-446655440711,Volunteer,Ticket for volunteers,0.00
+550e8400-e29b-41d4-a716-446655440712,Guest,Ticket for special guests,0.00
+550e8400-e29b-41d4-a716-446655440713,Sponsor,Ticket for sponsors,0.00
+550e8400-e29b-41d4-a716-446655440714,Media,Ticket for media representatives,0.00
+550e8400-e29b-41d4-a716-446655440715,Artist,Ticket for artists,0.00
+550e8400-e29b-41d4-a716-446655440716,Vendor,Ticket for vendors,0.00
+550e8400-e29b-41d4-a716-446655440717,Exhibitor,Ticket for exhibitors,0.00
+550e8400-e29b-41d4-a716-446655440718,Speaker,Ticket for speakers,0.00
+550e8400-e29b-41d4-a716-446655440719,Organizer,Ticket for event organizers,0.00

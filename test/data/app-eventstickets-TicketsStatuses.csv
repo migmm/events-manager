@@ -1,0 +1,21 @@
+ID,StatusName,Description
+550e8400-e29b-41d4-a716-446655440600,Pending,Ticket is pending payment
+550e8400-e29b-41d4-a716-446655440601,Paid,Ticket has been paid
+550e8400-e29b-41d4-a716-446655440602,Cancelled,Ticket has been cancelled
+550e8400-e29b-41d4-a716-446655440603,Refunded,Ticket has been refunded
+550e8400-e29b-41d4-a716-446655440604,Reserved,Ticket is reserved
+550e8400-e29b-41d4-a716-446655440605,Expired,Ticket has expired
+550e8400-e29b-41d4-a716-446655440606,Confirmed,Ticket is confirmed
+550e8400-e29b-41d4-a716-446655440607,CheckedIn,Ticket has been checked in
+550e8400-e29b-41d4-a716-446655440608,Invalid,Ticket is invalid
+550e8400-e29b-41d4-a716-446655440609,OnHold,Ticket is on hold
+550e8400-e29b-41d4-a716-446655440610,Processing,Ticket is being processed
+550e8400-e29b-41d4-a716-446655440611,Delivered,Ticket has been delivered
+550e8400-e29b-41d4-a716-446655440612,Shipped,Ticket is being shipped
+550e8400-e29b-41d4-a716-446655440613,Returned,Ticket has been returned
+550e8400-e29b-41d4-a716-446655440614,Lost,Ticket is lost
+550e8400-e29b-41d4-a716-446655440615,Stolen,Ticket is stolen
+550e8400-e29b-41d4-a716-446655440616,Damaged,Ticket is damaged
+550e8400-e29b-41d4-a716-446655440617,Reissued,Ticket has been reissued
+550e8400-e29b-41d4-a716-446655440618,Transferred,Ticket has been transferred
+550e8400-e29b-41d4-a716-446655440619,Voided,Ticket has been voided
